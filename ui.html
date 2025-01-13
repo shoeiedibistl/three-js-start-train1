@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ui</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="theme-color" content="#4285f4">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <script type="module" crossorigin src="scripts/index.js?1736782379911"></script>
+    <link rel="stylesheet" crossorigin href="styles/index.css">
+  </head>
+  <body data-barba="wrapper">
+    <div class="wrapper">
+      <main class="ui-page" data-barba="container" data-barba-namespace="ui">
+        <div class="inner"><br><br><br><br><br><br>
+          <form class="contacts-form__form" data-form-id="main-form" action="#">
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="fio" id="contacts-form1" type="text" placeholder="Имя *" required="" data-validate="text-only"/>
+                  <div class="custom-placeholder__service"></div><span>Имя *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+              <p class="font-bold">Только русские буквы</p>
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="fio" id="contacts-form1" type="text" placeholder="Имя *" required="" data-validate="text-cyrillic"/>
+                  <div class="custom-placeholder__service"></div><span>Имя *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="nickname" id="contacts-form1" type="text" placeholder="Никнейм *" required="" data-validate="text"/>
+                  <div class="custom-placeholder__service"></div><span>Никнейм *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="email" id="contacts-form2" type="email" required="" placeholder="Email *" data-validate="email" minlength="3"/>
+                  <div class="custom-placeholder__service"></div><span>Email *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="phone" id="contacts-form3" type="tel" data-mask-phone="" placeholder="Телефон *" required="" data-validate="tel"/>
+                  <div class="custom-placeholder__service"></div><span>Телефон *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
